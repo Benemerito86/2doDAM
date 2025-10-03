@@ -1,0 +1,24 @@
+Se pide crear una página que funcione como una lista de tareas simple. La página debe mostrar una lista de tareas existentes y permitir al usuario agregar una nueva tarea. La página debe cumplir con los siguientes requisitos:
+
+Mostrar Tareas: Al cargar la página, debe mostrar una lista desordenada (<ul>) con las tareas que ya existen.
+Agregar Tarea: Debe haber un formulario con un campo de texto para que el usuario escriba una nueva tarea y un botón para enviarla.
+Manejar Datos: Cuando el formulario se envía, la nueva tarea se debe agregar a la lista existente y la página debe recargarse mostrando la lista actualizada.
+Persistencia Simple: Para este ejercicio, utilizaremos una persistencia muy básica guardando las tareas en un archivo de texto en el servidor. Esto significa que las tareas no se perderán al recargar la página.
+
+
+La persistencia simple será con XML creando un archivo en ese formato denominado tareas.xml. Para que el formato sea válido tendrá la siguiente estructura:
+
+
+
+<?xml version="1.0" encoding="UTF-8"?><tareas></tareas>
+
+
+
+TIPS:
+
+Para cargar el fichero tareas.xml usando simplexml_load_file(). Esto te dará un objeto con el que puedes trabajar.
+Convierte el objeto XML modificado a una cadena de texto usando asXML(): $xml->asXML($archivo_xml);
+Para agregar una nueva tarea al XML utilizamos la directiva: addChild
+Redirige para evitar el reenvío del formulario header("Location: proyecto.php");
+
+

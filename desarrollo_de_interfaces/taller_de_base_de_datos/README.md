@@ -1,4 +1,6 @@
-# En esta actividad se pide realizar la siguiente interfaz:
+#El taller de base de datos
+
+### En esta actividad se pide realizar la siguiente interfaz:
 
 ![Ejercicio_Swing con bbdd.png](https://github.com/Benemerito86/2doDAM/blob/1f9a5336ab530a077b9f9b44b006613e24cc569e/desarrollo_de_interfaces/taller_de_base_de_datos/Ejercicio_Swing%20con%20bbdd.png)
 

@@ -1,4 +1,4 @@
-#El taller de base de datos
+# El taller de base de datos
 
 ### En esta actividad se pide realizar la siguiente interfaz:
 

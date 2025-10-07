@@ -4,4 +4,4 @@
 <img width="373" height="409" alt="image" src="https://github.com/user-attachments/assets/db189065-0621-4bf2-aa3c-051d429815f1" />
 
 
-[⬇️ Descargar proyecto pooDinero](https://github.com/Benemerito86/2doDAM/blob/111d15937934198fed1c22ba3f626331e259367d/sistema_de_gestion_empresarial/poo_python_dinero/pooDinero.zip)
+[⬇️ Descargar proyecto pooDinero](sistema_de_gestion_empresarial/calculadora_imc_tkinter/IMCTkinter.zip)

@@ -10,6 +10,9 @@ El sistema simula una empresa inventada y permite consultar su catálogo de prod
 
 ## 🏢 1. Descripción de la empresa
 
+**"Tienda Informatica"** es una empresa dedicada a la venta de recambios de ordenador.  
+
+Ofrece productos como ram, memoria y graficas, manteniendo promociones y descuentos especiales según la temporada.
 
 ---
 
@@ -53,4 +56,4 @@ La aplicación utiliza la API **JAXB (Java Architecture for XML Binding)** para:
 
 - Leer el archivo XML (`datos.xml`)  
 - Mapear los elementos XML a clases Java (como `Tienda`, `ram`, `memoria`, `grafica`)  
-- Procesar los datos y mostrarlos por consola según la opción seleccionada por el usuario  
+- Procesar los datos y mostrarlos por consola según la opción seleccionada por el usuario

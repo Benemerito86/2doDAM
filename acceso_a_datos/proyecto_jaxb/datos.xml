@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tienda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="XSDdatos.xsd">
+	<nombre>tienda</nombre>
+	<articulos>
+
+		<!-- 🔹 RAM -->
+		<ram codigo="1">
+			<nombre>RAM</nombre>
+			<autor>8GB DDR4</autor>
+			<precio>25€</precio>
+		</ram>
+		<ram codigo="2">
+			<nombre>RAM</nombre>
+			<autor>16GB DDR4</autor>
+			<precio>40€</precio>
+		</ram>
+		<ram codigo="3">
+			<nombre>RAM</nombre>
+			<autor>32GB DDR5</autor>
+			<precio>70€</precio>
+		</ram>
+		<ram codigo="4">
+			<nombre>RAM</nombre>
+			<autor>64GB DDR5</autor>
+			<precio>130€</precio>
+		</ram>
+		<ram codigo="5">
+			<nombre>RAM</nombre>
+			<autor>4GB DDR3</autor>
+			<precio>15€</precio>
+		</ram>
+		<ram codigo="6">
+			<nombre>RAM</nombre>
+			<autor>8GB DDR5</autor>
+			<precio>28€</precio>
+		</ram>
+		<ram codigo="7">
+			<nombre>RAM</nombre>
+			<autor>16GB DDR5</autor>
+			<precio>50€</precio>
+		</ram>
+		<ram codigo="8">
+			<nombre>RAM</nombre>
+			<autor>32GB DDR4</autor>
+			<precio>65€</precio>
+		</ram>
+		<ram codigo="9">
+			<nombre>RAM</nombre>
+			<autor>64GB DDR4</autor>
+			<precio>120€</precio>
+		</ram>
+		<ram codigo="10">
+			<nombre>RAM</nombre>
+			<autor>128GB DDR5</autor>
+			<precio>250€</precio>
+		</ram>
+
+		<!-- 🔹 MEMORIAS -->
+		<memoria codigo="11">
+			<nombre>Memoria</nombre>
+			<autor>SSD 256GB</autor>
+			<precio>35€</precio>
+		</memoria>
+		<memoria codigo="12">
+			<nombre>Memoria</nombre>
+			<autor>SSD 512GB</autor>
+			<precio>55€</precio>
+		</memoria>
+		<memoria codigo="13">
+			<nombre>Memoria</nombre>
+			<autor>SSD 1TB</autor>
+			<precio>80€</precio>
+		</memoria>
+		<memoria codigo="14">
+			<nombre>Memoria</nombre>
+			<autor>SSD 2TB</autor>
+			<precio>120€</precio>
+		</memoria>
+		<memoria codigo="15">
+			<nombre>Memoria</nombre>
+			<autor>HDD 500GB</autor>
+			<precio>30€</precio>
+		</memoria>
+		<memoria codigo="16">
+			<nombre>Memoria</nombre>
+			<autor>HDD 1TB</autor>
+			<precio>45€</precio>
+		</memoria>
+		<memoria codigo="17">
+			<nombre>Memoria</nombre>
+			<autor>HDD 2TB</autor>
+			<precio>65€</precio>
+		</memoria>
+		<memoria codigo="18">
+			<nombre>Memoria</nombre>
+			<autor>SSD NVMe 512GB</autor>
+			<precio>70€</precio>
+		</memoria>
+		<memoria codigo="19">
+			<nombre>Memoria</nombre>
+			<autor>SSD NVMe 1TB</autor>
+			<precio>110€</precio>
+		</memoria>
+		<memoria codigo="20">
+			<nombre>Memoria</nombre>
+			<autor>SSD NVMe 2TB</autor>
+			<precio>180€</precio>
+		</memoria>
+
+		<!-- 🔹 GRÁFICAS -->
+		<grafica codigo="21">
+			<nombre>Gráfica</nombre>
+			<autor>NVIDIA GTX 1050 Ti 4GB</autor>
+			<precio>100€</precio>
+		</grafica>
+		<grafica codigo="22">
+			<nombre>Gráfica</nombre>
+			<autor>NVIDIA GTX 1660 6GB</autor>
+			<precio>180€</precio>
+		</grafica>
+		<grafica codigo="23">
+			<nombre>Gráfica</nombre>
+			<autor>NVIDIA RTX 2060 6GB</autor>
+			<precio>250€</precio>
+		</grafica>
+		<grafica codigo="24">
+			<nombre>Gráfica</nombre>
+			<autor>NVIDIA RTX 3060 8GB</autor>
+			<precio>330€</precio>
+		</grafica>
+		<grafica codigo="25">
+			<nombre>Gráfica</nombre>
+			<autor>NVIDIA RTX 4070 12GB</autor>
+			<precio>600€</precio>
+		</grafica>
+		<grafica codigo="26">
+			<nombre>Gráfica</nombre>
+			<autor>AMD RX 6600 XT 8GB</autor>
+			<precio>350€</precio>
+		</grafica>
+		<grafica codigo="27">
+			<nombre>Gráfica</nombre>
+			<autor>AMD RX 6700 XT 12GB</autor>
+			<precio>450€</precio>
+		</grafica>
+		<grafica codigo="28">
+			<nombre>Gráfica</nombre>
+			<autor>AMD RX 7800 XT 16GB</autor>
+			<precio>550€</precio>
+		</grafica>
+		<grafica codigo="29">
+			<nombre>Gráfica</nombre>
+			<autor>NVIDIA RTX 4090 24GB</autor>
+			<precio>1600€</precio>
+		</grafica>
+		<grafica codigo="30">
+			<nombre>Gráfica</nombre>
+			<autor>Intel ARC A770 16GB</autor>
+			<precio>390€</precio>
+		</grafica>
+
+	</articulos>
+</tienda>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tienda>
+	<nombre>Libreria técnica</nombre>
+	<articulos>
+		<articulo codigo="1">
+			<nombre>RAM</nombre>
+			<autor>8GB 4DDR</autor>
+			<precio>10€</precio>
+		</articulo>
+		<articulo codigo="2">
+			<nombre>Memoria</nombre>
+			<autor>SSD 1TB</autor>
+			<precio>80€</precio>
+		</articulo>
+		<articulo codigo="3">
+			<nombre>Grafica</nombre>
+			<autor>nvidia 1080 TI 8GB</autor>
+			<precio>100€</precio>
+		</articulo>
+	</articulos>
+</tienda>
+

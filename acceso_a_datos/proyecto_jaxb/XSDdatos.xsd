@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <!-- 🔹 Elemento raíz -->
+    <xs:element name="tienda">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string"/>
+                <xs:element name="articulos">
+                    <xs:complexType>
+                        <xs:choice maxOccurs="unbounded">
+                            <xs:element name="ram" type="ramType"/>
+                            <xs:element name="memoria" type="memoriaType"/>
+                            <xs:element name="grafica" type="graficaType"/>
+                        </xs:choice>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- 🔹 Tipo base para artículos -->
+    <xs:complexType name="articuloBase">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="autor" type="xs:string"/>
+            <xs:element name="precio" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="codigo" type="xs:positiveInteger" use="required"/>
+    </xs:complexType>
+
+    <!-- 🔹 Subtipos específicos -->
+    <xs:complexType name="ramType">
+        <xs:complexContent>
+            <xs:extension base="articuloBase"/>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="memoriaType">
+        <xs:complexContent>
+            <xs:extension base="articuloBase"/>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="graficaType">
+        <xs:complexContent>
+            <xs:extension base="articuloBase"/>
+        </xs:complexContent>
+    </xs:complexType>
+
+</xs:schema>

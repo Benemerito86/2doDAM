@@ -57,3 +57,14 @@ La aplicación utiliza la API **JAXB (Java Architecture for XML Binding)** para:
 - Leer el archivo XML (`datos.xml`)  
 - Mapear los elementos XML a clases Java (como `Tienda`, `ram`, `memoria`, `grafica`)  
 - Procesar los datos y mostrarlos por consola según la opción seleccionada por el usuario
+
+---
+
+## ⬇️ 6. Descargas
+
+[⬇️ Descargar proyecto]()
+
+[⬇️ Descargar .xml]()
+
+[⬇️ Descargar .xsd]()
+

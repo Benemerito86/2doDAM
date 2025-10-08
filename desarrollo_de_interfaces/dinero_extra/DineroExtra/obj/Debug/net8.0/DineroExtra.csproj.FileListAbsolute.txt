@@ -1,0 +1,14 @@
+C:\Users\Miguel\source\repos\DineroExtra\obj\Debug\net8.0\DineroExtra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Miguel\source\repos\DineroExtra\obj\Debug\net8.0\DineroExtra.AssemblyInfoInputs.cache
+C:\Users\Miguel\source\repos\DineroExtra\obj\Debug\net8.0\DineroExtra.AssemblyInfo.cs
+C:\Users\Miguel\source\repos\DineroExtra\obj\Debug\net8.0\DineroExtra.csproj.CoreCompileInputs.cache
+C:\Users\Miguel\source\repos\DineroExtra\bin\Debug\net8.0\DineroExtra.exe
+C:\Users\Miguel\source\repos\DineroExtra\bin\Debug\net8.0\DineroExtra.deps.json
+C:\Users\Miguel\source\repos\DineroExtra\bin\Debug\net8.0\DineroExtra.runtimeconfig.json
+C:\Users\Miguel\source\repos\DineroExtra\bin\Debug\net8.0\DineroExtra.dll
+C:\Users\Miguel\source\repos\DineroExtra\bin\Debug\net8.0\DineroExtra.pdb
+C:\Users\Miguel\source\repos\DineroExtra\obj\Debug\net8.0\DineroExtra.dll
+C:\Users\Miguel\source\repos\DineroExtra\obj\Debug\net8.0\refint\DineroExtra.dll
+C:\Users\Miguel\source\repos\DineroExtra\obj\Debug\net8.0\DineroExtra.pdb
+C:\Users\Miguel\source\repos\DineroExtra\obj\Debug\net8.0\DineroExtra.genruntimeconfig.cache
+C:\Users\Miguel\source\repos\DineroExtra\obj\Debug\net8.0\ref\DineroExtra.dll

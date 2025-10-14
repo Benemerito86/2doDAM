@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SGH — El Gran Descanso (Simple)</title>
+    <style>
+      @import url('styles.css');
+    </style>
+</head>
+<body>
+  <h1>SGH — El Gran Descanso</h1>
+
+  <div class="box">
+    <h2>Habitaciones</h2>
+    <form action="back.php" method="post">
+      <div class="row">
+        <label>Número: <input type="text" name="numero" placeholder="001" /></label>
+        <label>Tipo:
+          <select name="tipo">
+            <option>Sencilla</option>
+            <option>Doble</option>
+            <option>Suite</option>
+          </select>
+        </label>
+        <label>Precio base/noche: <input type="number" name="precio" step="0.01" placeholder="50.00" /></label>
+        <button class="btn" type="submit">Añadir</button>
+      </div>
+    </form>
+
+    <table>
+      <thead>
+        <tr><th>Número</th><th>Tipo</th><th>Precio base</th><th>Estado limpieza</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>101</td><td>Sencilla</td><td>50.00</td><td>Limpia</td></tr>
+        <tr><td>102</td><td>Doble</td><td>80.00</td><td>Limpia</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="box">
+    <h2>Huéspedes</h2>
+    <form action="back.php" method="post">
+      <div class="row">
+        <label>Nombre: <input type="text" name="nombre" placeholder="Nombre completo" /></label>
+        <label>Email: <input type="email" name="email" placeholder="email@ejemplo.com" /></label>
+        <label>Documento: <input type="text" name="documento" placeholder="DNI / Pasaporte" /></label>
+        <button class="btn" type="submit">Registrar</button>
+      </div>
+    </form>
+
+    <table>
+      <thead><tr><th>Nombre</th><th>Email</th><th>Documento</th></tr></thead>
+      <tbody>
+        <tr><td>Ana Pérez</td><td>ana@example.com</td><td>X12345</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="box">
+    <h2>Reservas</h2>
+    <form>
+      <div class="row">
+        <label>Huésped:
+          <select>
+            <option>Ana Pérez — ana@example.com</option>
+          </select>
+        </label>
+        <label>Habitación:
+          <select>
+            <option>101 — Sencilla</option>
+            <option>102 — Doble</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="row" style="margin-top:8px">
+        <label>Fecha llegada: <input type="date" /></label>
+        <label>Fecha salida:  <input type="date" /></label>
+        <label>Estado:
+          <select>
+            <option>Pendiente</option>
+            <option>Confirmada</option>
+            <option>Cancelada</option>
+          </select>
+        </label>
+        <button class="btn" type="button">Crear</button>
+      </div>
+
+      <p class="muted" style="margin-top:8px">
+        Regla: no asignar habitación si hay mantenimiento activo y evitar solapamiento de reservas confirmadas.
+      </p>
+    </form>
+
+    <table>
+      <thead><tr><th>Huésped</th><th>Hab</th><th>Desde</th><th>Hasta</th><th>Precio total</th><th>Estado</th></tr></thead>
+      <tbody>
+        <tr><td>Ana Pérez</td><td>101</td><td>2025-10-20</td><td>2025-10-22</td><td>100.00</td><td>Confirmada</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="box">
+    <h2>Mantenimiento / Limpieza</h2>
+    <form>
+      <div class="row">
+        <label>Hab: 
+          <select><option>101</option><option>102</option></select>
+        </label>
+        <label>Inicio: <input type="date" /></label>
+        <label>Fin: <input type="date" /></label>
+        <label>Descripción de la tarea: <input type="text" placeholder="Ejemplo: Arreglar grifo" /></label>
+
+        <button class="btn" type="button">Registrar</button>
+      </div>
+    </form>
+
+    <table>
+      <thead><tr><th>Hab</th><th>Inicio</th><th>Fin</th><th>Descripción</th></tr></thead>
+      <tbody>
+        <tr><td>102</td><td>2025-10-25</td><td>2025-10-27</td><td>Arreglar grifo</td></tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

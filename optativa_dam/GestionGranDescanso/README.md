@@ -1,4 +1,4 @@
-# 🛎️ Enunciado: Sistema de Gestión Hotelera (SGH) PDO
+# 🛎️ Enunciado: Sistema de Gestión Hotelera (SGH) - PHP
 El Hotel "El Gran Descanso" necesita un sistema para gestionar las reservas de sus habitaciones y coordinar las tareas de limpieza y mantenimiento.
 ## 1.Habitaciones:
 El hotel tiene varias Habitaciones, cada una con un número (único), un tipo (Ej: Sencilla, Doble, Suite) y un precio_base por noche.

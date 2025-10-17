@@ -36,8 +36,8 @@ Cada asignatura cuenta con un `README.md` propio desde el que podrás:
 
 ## 🧑‍💻 Autor
 **Miguel Benjumea**  
-📚 2º DAM — Curso 2025 / 2026
-✉️ benemerito.benjumea@gmail.com
+- 📚 2º DAM — Curso 2025 / 2026
+- ✉️ benemerito.benjumea@gmail.com
 
 ---
 

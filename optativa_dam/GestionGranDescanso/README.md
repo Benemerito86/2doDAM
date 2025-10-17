@@ -33,6 +33,6 @@ El sistema debe permitir registrar Tareas de Mantenimiento, indicando la fecha_i
 ---
 
 ## Descargar .ZIP
-[⬇️ Descargar .ZIP del proyecto](optativa_dam/GestionGranDescanso/GranDescanso.zip)
+[⬇️ Descargar .ZIP del proyecto](https://github.com/Benemerito86/2doDAM/blob/640c6590fb18798819da32838b49e4a75855f75b/optativa_dam/GestionGranDescanso/GranDescanso.zip)
 
 

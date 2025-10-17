@@ -1,42 +1,37 @@
 <?php
-    $host = "localhost";
-    $db = "GranDescanso";
-    $user = "root";
-    $pass = "";
+require_once '../model/Conexion.php';
 
+class Huesped {# Clase para manejar los huéspedes
+    /* En esta clase se implementan los métodos CRUD para la tabla Huespedes, las funciones son:
+        - obtenerHuespedes(): Obtener todos los huéspedes
+        - agregarHuesped($nombre, $email, $documento): Agregar un nuevo huésped
+        - borrarHuesped($email): Borrar un huésped
+        - actualizarHuesped($nombre, $email, $documento): Actualizar un huésped
+    */
+    private $pdo;
 
-    $numero = $_POST['numero'] ?? '';
-    $tipo = $_POST['tipo'] ?? '';
-    $precio = $_POST['precio'] ?? '';
-
-    $nombre = $_POST['nombre'] ?? '';
-    $email = $_POST['email'] ?? '';
-    $documento = $_POST['documento'] ?? '';
-    
-
-    try {
-        $dsn = "mysql:host=$host;dbname=$db;charset=utf8mb4";
-        $options = [
-            PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
-            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-            PDO::ATTR_EMULATE_PREPARES   => false,
-        ];
-        $pdo = new PDO($dsn, $user, $pass, $options);
-        
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            if (isset($_POST['add_room'])) {
-                $stmt = $pdo->prepare('INSERT INTO habitaciones (numero, tipo, precio_base) VALUES (?, ?, ?)');
-                $stmt->execute([$numero, $tipo, $precio]);
-                echo "Habitación añadida exitosamente.";
-            } elseif (isset($_POST['add_guest'])) {
-                $stmt = $pdo->prepare('INSERT INTO huespedes (nombre, email, documento_identidad) VALUES (?, ?, ?)');
-                $stmt->execute([$nombre, $email, $documento]);
-                echo "Huésped añadido exitosamente.";
-            }
-        }
-    } catch (PDOException $e) {
-        echo "Error de conexión: " . $e->getMessage();
+    public function __construct() {
+        $this->pdo = (new Conexion())->getPDO();
     }
-    header("Location: ../index.html?msg=ok");
-    exit;
+    public function obtenerHuespedes() {
+        $stmt = $this->pdo->query("SELECT nombre, email, documento FROM Huespedes");
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    
+    public function agregarHuesped($nombre, $email, $documento) {
+        $stmt = $this->pdo->prepare("INSERT INTO Huespedes (nombre, email, documento) VALUES (?, ?, ?)");
+        $stmt->execute([$nombre, $email, $documento]);
+    }
+    public function borrarHuesped($email) {
+        $stmt = $this->pdo->prepare("DELETE FROM Huespedes WHERE email = ?");
+        $stmt->execute([$email]);
+    }
+    public function actualizarHuesped($nombre, $email, $documento) {
+        $stmt = $this->pdo->prepare("UPDATE Huespedes SET nombre = ?, email = ?, documento = ? WHERE email = ?");
+        $stmt->execute([$nombre, $email, $documento]);
+    }
+    
+}
+
 ?>

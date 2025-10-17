@@ -20,7 +20,7 @@ Cada carpeta incluye:
 | Asignatura | Descripción | Enlace |
 |-------------|--------------|--------|
 | 🧠 **Optativa DAM** | Proyectos experimentales o de libre elección realizados en la asignatura optativa. | [Ir a carpeta →](./optativa_dam) |
-| 🗃️ **Sistemas de Gestión Empresarial** | Aplicaciones orientadas a la gestión de datos y procesos empresariales. | [Ir a carpeta →](./sistemas_de_gestion) |
+| 🗃️ **Sistemas de Gestión Empresarial** | Aplicaciones orientadas a la gestión de datos y procesos empresariales. | [Ir a carpeta →](./sistemas_de_gestion_empresarial) |
 | 🎨 **Desarrollo de Interfaces** | Interfaces gráficas (UI/UX) en XAML, JavaFX, Android Studio y otros entornos. | [Ir a carpeta →](./desarrollo_de_interfaces) |
 | 🔌 **Acceso a Datos** | Proyectos centrados en la persistencia y acceso a bases de datos con SQL, JDBC, y Entity Framework. | [Ir a carpeta →](./acceso_a_datos) |
 

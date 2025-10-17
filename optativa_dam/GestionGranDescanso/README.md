@@ -14,8 +14,6 @@ Cada habitación tiene un Estado de Limpieza (Limpia, Sucia, En Limpieza).
 El sistema debe permitir registrar Tareas de Mantenimiento, indicando la fecha_inicio, la fecha_fin esperada, y la descripción.
 
 
-[⬇️ Descargar .ZIP del proyecto](optativa_dam/GestionGranDescanso/GranDescanso.zip)
-
 <img width="2560" height="1330" alt="image" src="https://github.com/user-attachments/assets/a1ea69af-140e-4fa9-9e03-ff1dfebec648" />
 
 
@@ -33,3 +31,8 @@ El sistema debe permitir registrar Tareas de Mantenimiento, indicando la fecha_i
 | **PDO** | Conexión de la base de datos con el php |
 
 ---
+
+## Descargar .ZIP
+[⬇️ Descargar .ZIP del proyecto](optativa_dam/GestionGranDescanso/GranDescanso.zip)
+
+

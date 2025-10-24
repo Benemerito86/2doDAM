@@ -35,4 +35,4 @@ El archivo JSON incluye:
 - 2. Diagrama de Clases (Ingenieria inversa)
 <img width="614" height="750" alt="image" src="https://github.com/user-attachments/assets/ba57f364-f0fc-4316-984d-bc21d750d881" />
 
-[⬇️ Descargar proyecto](https://github.com/Benemerito86/2doDAM/blob/main/)
+[⬇️ Descargar proyecto](https://github.com/Benemerito86/2doDAM/blob/main/acceso_a_datos/TiendaTecnologia/tiendaTecnologica)

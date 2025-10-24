@@ -34,5 +34,5 @@ El diseño presenta:
 
 ---
 
-[⬇️ Descargar proyecto.php](https://github.com/Benemerito86/2doDAM/blob/main/desarrollo_de_interfaces/mvvc_mpf/WpfAppNoSteam)
+[⬇️ Proyecto](https://github.com/Benemerito86/2doDAM/blob/main/desarrollo_de_interfaces/mvvc_mpf/WpfAppNoSteam)
 

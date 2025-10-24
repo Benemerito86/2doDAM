@@ -1,0 +1,39 @@
+﻿<Window x:Class="WpfAppNoSteam.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppNoSteam"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="568" Width="477" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <!-- Fondo -->
+        <Grid.Background>
+            <ImageBrush ImageSource="/fondo.png" Stretch="UniformToFill"/>
+        </Grid.Background>
+
+        <!-- Capa semitransparente -->
+        <Rectangle Fill="#AA000000"/>
+
+        <!-- Contenido -->
+        <Border Background="#1E1E1E" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="25" CornerRadius="20">
+
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="280" Background="#1E1E1E">
+                <TextBlock Text="NoSteam" FontSize="26" FontWeight="Bold" Foreground="#00FFAA" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+                <TextBlock Text="Correo electrónico:" Foreground="White" Margin="0,0,0,5"/>
+                <TextBox x:Name="txtEmail" Height="30" Margin="0,0,0,10"/>
+
+                <TextBlock Text="Contraseña:" Foreground="White" Margin="0,0,0,5"/>
+                <PasswordBox x:Name="txtPassword" Height="30" Margin="0,0,0,20"/>
+
+                <Button Content="Iniciar Sesión" Click="Login_Click"
+                    Background="#00FFAA" Foreground="Black" FontWeight="Bold"
+                    Height="40" BorderThickness="0" Cursor="Hand" />
+
+                <TextBlock Text="¿No tienes cuenta? Regístrate"
+                       Foreground="#CCCCCC" HorizontalAlignment="Center"
+                       Margin="0,15,0,0" Cursor="Hand" MouseDown="Register"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

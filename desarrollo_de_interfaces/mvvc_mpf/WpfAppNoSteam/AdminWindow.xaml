@@ -1,0 +1,137 @@
+﻿<Window x:Class="WpfAppNoSteam.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Panel de Administración - NoSteam"
+        Height="600" Width="900"
+        WindowStartupLocation="CenterScreen"
+        Background="#0E1621">
+
+    <Grid>
+        <!-- Fondo -->
+        <Grid.Background>
+            <ImageBrush ImageSource="/fondo.png" Stretch="UniformToFill"/>
+        </Grid.Background>
+
+        <!-- Capa oscura semitransparente -->
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+
+        <!-- 🔹 BARRA SUPERIOR -->
+        <Border Grid.Row="0" Background="#1E1E1E" Opacity="0.95">
+            <DockPanel Margin="20,0">
+                <TextBlock Text="NoSteam"
+                           FontSize="24"
+                           FontWeight="Bold"
+                           Foreground="#00FFAA"
+                           VerticalAlignment="Center"/>
+
+                <StackPanel Orientation="Horizontal"
+                            DockPanel.Dock="Right"
+                            VerticalAlignment="Center">
+                    <Button Content="Perfil"
+                            Background="Transparent"
+                            Foreground="White"
+                            BorderBrush="Transparent"
+                            Padding="10,5"
+                            FontSize="14"
+                            Cursor="Hand"
+                            Click="ToProfile"/>
+                </StackPanel>
+            </DockPanel>
+        </Border>
+
+        <!-- 🔹 CONTENIDO PRINCIPAL -->
+        <ScrollViewer Grid.Row="1"
+                      VerticalScrollBarVisibility="Auto"
+                      HorizontalScrollBarVisibility="Disabled"
+                      Margin="20,10">
+            <StackPanel Width="860">
+                <TextBlock Text="Panel de Administración"
+                           FontSize="28"
+                           FontWeight="Bold"
+                           Foreground="White"
+                           Margin="0,0,0,25"
+                           HorizontalAlignment="Center"/>
+
+                <!-- Botones de acción -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,30">
+                    <Button Content="➕ Añadir Juego"
+                            Width="160"
+                            Height="40"
+                            Margin="0,0,20,0"
+                            Background="#00FFAA"
+                            Foreground="Black"
+                            FontWeight="Bold"
+                            BorderThickness="0"
+                            Cursor="Hand"
+                            Click="ToAddGame"/>
+                    <Button Content="🗑️ Eliminar Juego"
+                            Width="160"
+                            Height="40"
+                            Background="#f19895"
+                            Foreground="Black"
+                            FontWeight="Bold"
+                            BorderThickness="0"
+                            Cursor="Hand"
+                            Click="ToDelGame"/>
+                </StackPanel>
+
+                <!-- Lista de juegos -->
+                <ItemsControl x:Name="ListaJuegos">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel ItemWidth="180" ItemHeight="200" />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Button Background="Transparent" BorderThickness="0" Tag="{Binding}" Margin="10">
+                                <Border Width="160" Height="190" 
+                                        Background="#2A2A2A" 
+                                        CornerRadius="15"
+                                        Padding="8">
+                                    <Border.Effect>
+                                        <DropShadowEffect Color="#000000" BlurRadius="12" ShadowDepth="4" Opacity="0.6"/>
+                                    </Border.Effect>
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="130"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+
+                                        <Image Grid.Row="0"
+                                               Source="/fondo.png"
+                                               Stretch="UniformToFill"/>
+
+                                        <TextBlock Grid.Row="1"
+                                                   Text="{Binding NombrePrecio}"
+                                                   TextWrapping="Wrap"
+                                                   TextAlignment="Center"
+                                                   FontSize="13"
+                                                   FontWeight="Bold"
+                                                   Foreground="White"
+                                                   Margin="5,5,5,0"/>
+                                    </Grid>
+                                </Border>
+                            </Button>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- 🔹 BARRA INFERIOR DECORATIVA -->
+        <Border Grid.Row="2" Background="#1E1E1E" Opacity="0.95">
+            <TextBlock Text="Panel de Administrador • Solo usuarios autorizados"
+                       Foreground="#00FFAA"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontStyle="Italic"
+                       FontSize="13"/>
+        </Border>
+    </Grid>
+</Window>

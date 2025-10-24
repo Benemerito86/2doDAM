@@ -1,0 +1,49 @@
+{"tienda": {
+    "categorias": [{
+        "id": 1,
+        "nombre": "electronica",
+        "productos": [{
+            "descripcion": "bueno",
+            "precio": 12,
+            "caracteristicas": {
+                "bateria": "21345wat",
+                "pantalla": "buena",
+                "camara": "top"
+            },
+            "id": 1,
+            "nombre": "movil",
+            "inventario": 44
+        }]
+    }],
+    "usuarios": [
+        {
+            "direccion": {
+                "numero": 123,
+                "ciudad": "Madrid",
+                "calle": "Calle Principal",
+                "pais": "España"
+            },
+            "historialCompras": [{
+                "fecha": "2023-11-14",
+                "productoId": 101,
+                "cantidad": 2
+            }],
+            "id": 1,
+            "nombre": "Juan Pérez",
+            "email": "juanperez@example.com"
+        },
+        {
+            "direccion": {
+                "numero": 1,
+                "ciudad": "s",
+                "calle": "s",
+                "pais": "1"
+            },
+            "historialCompras": [],
+            "id": 2,
+            "nombre": "jesus",
+            "email": "jesus"
+        }
+    ],
+    "nombre": "Mi Tienda Online"
+}}

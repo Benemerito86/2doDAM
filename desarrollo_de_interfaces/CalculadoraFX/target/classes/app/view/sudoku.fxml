@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.SudokuController">
+    <GridPane fx:id="boardGrid" hgap="2" vgap="2">
+        <!-- Celdas 9x9 se agregarán dinámicamente desde el controlador -->
+    </GridPane>
+
+    <HBox spacing="5" alignment="CENTER">
+        <Button text="1" onAction="#onNumberClick"/>
+        <Button text="2" onAction="#onNumberClick"/>
+        <Button text="3" onAction="#onNumberClick"/>
+        <Button text="4" onAction="#onNumberClick"/>
+        <Button text="5" onAction="#onNumberClick"/>
+        <Button text="6" onAction="#onNumberClick"/>
+        <Button text="7" onAction="#onNumberClick"/>
+        <Button text="8" onAction="#onNumberClick"/>
+        <Button text="9" onAction="#onNumberClick"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Validar" onAction="#onValidate"/>
+        <Button text="Nuevo Sudoku" onAction="#onNewPuzzle"/>
+        <Label fx:id="statusLabel" text="" style="-fx-font-size: 16px;"/>
+    </HBox>
+</VBox>

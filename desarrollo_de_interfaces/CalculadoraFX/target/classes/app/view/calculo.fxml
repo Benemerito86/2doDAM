@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="323.0" prefWidth="249.0" spacing="10" style="-fx-padding: 15; -fx-background-color: #f8f8f8;" stylesheets="@../css/calculadora.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.CalculoController">
+
+    <SplitPane dividerPositions="0.671875" prefHeight="50">
+        <items>
+            <TextField fx:id="oper" editable="false" style="-fx-font-size: 24px; -fx-alignment: center-right; -fx-background-color: white;" text="0 + 0 =" />
+            <TextField fx:id="display" editable="false" prefHeight="49.0" prefWidth="110.0" style="-fx-font-size: 24px; -fx-alignment: center-right; -fx-background-color: white;" text="0" />
+        </items>
+    </SplitPane>
+
+    <GridPane hgap="8" prefHeight="232.0" prefWidth="263.0" vgap="8" VBox.vgrow="ALWAYS">
+
+        <Button onAction="#appendNumber" text="7" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <Button onAction="#appendNumber" text="8" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Button onAction="#appendNumber" text="9" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+        <Button onAction="#toggleSign" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+
+        <Button onAction="#appendNumber" text="4" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Button onAction="#appendNumber" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Button onAction="#appendNumber" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+
+        <Button onAction="#appendNumber" text="1" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <Button onAction="#appendNumber" text="2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Button onAction="#appendNumber" text="3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+
+        <Button onAction="#appendNumber" text="0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+        <Button onAction="#appendDecimal" text="." GridPane.columnIndex="2" GridPane.rowIndex="3" />
+
+        <Button onAction="#clear" text="C" GridPane.columnIndex="3" />
+        <Button onAction="#calculate" text="=" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+
+        <columnConstraints>
+            <ColumnConstraints hgrow="ALWAYS" />
+            <ColumnConstraints hgrow="ALWAYS" />
+            <ColumnConstraints hgrow="ALWAYS" />
+            <ColumnConstraints hgrow="ALWAYS" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints vgrow="ALWAYS" />
+            <RowConstraints vgrow="ALWAYS" />
+            <RowConstraints vgrow="ALWAYS" />
+            <RowConstraints vgrow="ALWAYS" />
+            <RowConstraints vgrow="ALWAYS" />
+        </rowConstraints>
+
+    </GridPane>
+</VBox>

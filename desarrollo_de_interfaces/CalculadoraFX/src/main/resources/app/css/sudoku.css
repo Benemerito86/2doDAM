@@ -1,0 +1,61 @@
+.grid-pane {
+    -fx-background-color: #e0e0e0;
+    -fx-padding: 5;
+}
+
+.text-field {
+    -fx-font-size: 24px;
+    -fx-alignment: center;
+    -fx-pref-width: 50;
+    -fx-pref-height: 50;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: black;
+    -fx-border-width: 1;
+    -fx-text-fill: #333333;
+}
+
+.text-field.fixed {
+    -fx-background-color: #b3e5fc; /* celda generada por el programa */
+    -fx-font-weight: bold;
+}
+
+.text-field.editable {
+    -fx-background-color: #ffffff; /* celda que el usuario puede rellenar */
+    -fx-text-fill: #000000;
+}
+
+.text-field.highlight {
+    -fx-background-color: #fff59d; /* si se quiere resaltar selección */
+}
+
+.button {
+    -fx-font-size: 18px;
+    -fx-background-color: #34495e;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.button:hover {
+    -fx-opacity: 0.85;
+}
+
+.button:pressed {
+    -fx-opacity: 0.7;
+}
+
+/* Bordes gruesos para 3x3 */
+.grid-pane > .text-field {
+    -fx-border-width: 1;
+}
+
+.text-field.fixed {
+    -fx-background-color: #b3e5fc; /* celda generada */
+    -fx-font-weight: bold;
+    -fx-text-fill: #1565c0; /* azul oscuro para números generados */
+}
+
+.text-field.editable {
+    -fx-background-color: #ffffff; /* celda editable */
+    -fx-text-fill: #000000; /* negro para el usuario */
+}

@@ -1,0 +1,197 @@
+/* ===== Reset y Variables ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Modo claro */
+  --color-primary: #4f46e5;
+  --color-primary-light: #7c3aed;
+  --color-primary-dark: #4338ca;
+  --color-primary-darker: #6d28d9;
+  --color-bg-gradient-start: #6a11cb;
+  --color-bg-gradient-end: #2575fc;
+  --color-container: rgba(255, 255, 255, 0.95);
+  --color-text: #2c3e50;
+  --color-label: #34495e;
+  --color-input-bg: #f9fafb;
+  --color-input-border: #dce0e5;
+  --color-input-focus: #3b82f6;
+  --color-input-focus-shadow: rgba(59, 130, 246, 0.2);
+  --color-border: #dce0e5;
+  --color-shadow: rgba(0, 0, 0, 0.2);
+  --color-error: #f87171;
+  --color-success: #34d399;
+  --color-link: var(--color-primary);
+  --color-btn-modo-bg: rgba(79, 70, 229, 0.1);
+  --color-btn-modo-bg-hover: rgba(79, 70, 229, 0.2);
+}
+
+/* ===== Modo Oscuro: sobrescribe variables ===== */
+body.oscuro {
+  --color-bg-gradient-start: #0f172a;
+  --color-bg-gradient-end: #0f172a;
+  --color-container: #1e293b;
+  --color-text: #f1f5f9;
+  --color-label: #cbd5e1;
+  --color-input-bg: #334155;
+  --color-input-border: #475569;
+  --color-input-focus: #818cf8;
+  --color-input-focus-shadow: rgba(129, 140, 248, 0.25);
+  --color-border: #334155;
+  --color-shadow: rgba(0, 0, 0, 0.4);
+  --color-link: #c7d2fe;
+  --color-btn-modo-bg: rgba(199, 210, 254, 0.1);
+  --color-btn-modo-bg-hover: rgba(199, 210, 254, 0.2);
+}
+
+/* ===== Estilos base ===== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, var(--color-bg-gradient-start), var(--color-bg-gradient-end));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  color: var(--color-text);
+}
+
+.login-container {
+  background: var(--color-container);
+  padding: 30px 35px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px var(--color-shadow);
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn 0.6s ease-out;
+  border: 1px solid var(--color-border);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: var(--color-text);
+  font-weight: 600;
+  font-size: 24px;
+}
+
+/* Formulario */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--color-label);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--color-input-border);
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background-color: var(--color-input-bg);
+  color: var(--color-text);
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--color-input-focus);
+  box-shadow: 0 0 0 3px var(--color-input-focus-shadow);
+  background-color: var(--color-input-bg);
+}
+
+/* Botón principal */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, var(--color-primary), var(--color-primary-light));
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(to right, var(--color-primary-dark), var(--color-primary-darker));
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+/* Mensajes */
+.msg-error {
+  color: var(--color-error);
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.msg-success {
+  color: var(--color-success);
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+/* Enlaces */
+.link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.95rem;
+}
+
+.link a {
+  color: var(--color-link);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}
+
+/* Toggle de modo */
+.modo-toggle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-modo {
+  display: inline-block;
+  padding: 6px 12px;
+  background: var(--color-btn-modo-bg);
+  color: var(--color-link);
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.btn-modo:hover {
+  background: var(--color-btn-modo-bg-hover);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 25px 20px;
+  }
+}

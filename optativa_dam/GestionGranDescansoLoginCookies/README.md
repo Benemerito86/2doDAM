@@ -28,24 +28,22 @@ La base de este trabajo es la tarea anterior llamada **"GranDescanso"**, a la cu
 ## 🖼️ Capturas de Pantalla y Explicación
 
 ### Captura 1: Interfaz Principal en Modo Claro
-
-![Interfaz principal en modo claro](./captura2.png)
+<img width="2560" height="1369" alt="image" src="https://github.com/user-attachments/assets/7c93854d-1c0f-4b79-93ea-8b37fc197a4f" />
 
 *En esta captura se observa la interfaz principal del sistema (`MainView.php`) con un diseño en modo claro (fondo azul). El usuario ya ha iniciado sesión, como lo indica el botón "Cerrar Sesión". Además, se puede ver el botón "Modo Oscuro", que permite cambiar el tema de la interfaz. La tabla muestra las habitaciones registradas en la base de datos.*
 
 ---
 
 ### Captura 2: Pantalla de Inicio de Sesión
-
-![Pantalla de inicio de sesión](./captura3.png)
+<img width="2560" height="1368" alt="image" src="https://github.com/user-attachments/assets/1da475ff-675c-45d8-8aeb-58c7be4950bb" />
 
 *Esta captura muestra la pantalla de login (`LoginView.php`). El usuario debe introducir sus credenciales para acceder al sistema. Se proporcionan credenciales de prueba para usuarios administradores y estándar. Nótese que también en esta pantalla se incluye el botón "Modo Oscuro", lo que significa que la preferencia de color se aplica incluso antes de iniciar sesión, gracias a la cookie.*
 
 ---
 
 ### Captura 3: Interfaz Principal en Modo Oscuro
+<img width="1920" height="994" alt="Sin título" src="https://github.com/user-attachments/assets/2f35a2f3-484b-4148-9b01-38bde7b96af0" />
 
-![Interfaz principal en modo oscuro](./captura4.png)
 
 *En esta captura se muestra la misma interfaz principal, pero ahora en modo oscuro (fondo oscuro). El botón de cambio de tema ahora dice "Modo Claro", indicando que el usuario puede alternar entre ambos modos. Esta funcionalidad se logra mediante el uso de una cookie que guarda la preferencia del usuario.*
 
@@ -69,110 +67,6 @@ La base de este trabajo es la tarea anterior llamada **"GranDescanso"**, a la cu
 
 ---
 
-## 📂 Estructura del Proyecto (Recomendada)
-
-Qwen3-Max
-3:42 PM
-Perfecto, aquí tienes el archivo .md actualizado con la estructura de carpetas que me proporcionaste. He modificado la sección "Estructura del Proyecto" para reflejar exactamente tu árbol de archivos.
-
-markdown
-
-
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62
-63
-64
-65
-66
-67
-68
-69
-70
-71
-72
-73
-74
-75
-76
-77
-78
-79
-80
-81
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
 # Actividad: Cookies y Sesiones en el Sistema de Gestión Hotelera (SGH)
 
 **Fecha de entrega:** Lunes, 10 de noviembre de 2025

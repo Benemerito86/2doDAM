@@ -82,10 +82,6 @@ public class Animal {
         clasificacion.getAnimales().add(this);
     }
 
-    public void removeClasificacion(Clasificacion clasificacion) {
-        this.clasificaciones.remove(clasificacion);
-        clasificacion.getAnimales().remove(this);
-    }
 
     @Override
     public String toString() {

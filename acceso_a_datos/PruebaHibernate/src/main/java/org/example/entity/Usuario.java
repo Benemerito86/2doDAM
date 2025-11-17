@@ -41,18 +41,6 @@ public class Usuario {
     public String getEmail() { return email; }
     public void setEmail(String email) { this.email = email; }
 
-    public Set<Animal> getAnimales() { return animales; }
-    public void setAnimales(Set<Animal> animales) { this.animales = animales; }
-
-    public void addAnimal(Animal animal) {
-        this.animales.add(animal);
-        animal.setUsuario(this);
-    }
-
-    public void removeAnimal(Animal animal) {
-        this.animales.remove(animal);
-        animal.setUsuario(null);
-    }
 
     @Override
     public String toString() {

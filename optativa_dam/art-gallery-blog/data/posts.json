@@ -1,0 +1,53 @@
+[
+    {
+        "id": "post001",
+        "user_id": "user001",
+        "image": "https:\/\/images.unsplash.com\/photo-1579783902614-a3fb3927b6a5?w=800&h=800&fit=crop",
+        "caption": "Explorando nuevas t\u00e9cnicas de arte abstracto. Los colores vibrantes representan la energ\u00eda y pasi\u00f3n que siento al crear. \ud83c\udfa8\u2728",
+        "likes": [
+            "admin001"
+        ],
+        "comments": [
+            {
+                "id": "c1",
+                "user_id": "user002",
+                "username": "artist",
+                "text": "\u00a1Me encantan los colores! \ud83d\ude0d",
+                "created_at": "2024-12-05 11:00:00"
+            }
+        ],
+        "created_at": "2024-12-05 10:30:00"
+    },
+    {
+        "id": "post002",
+        "user_id": "user002",
+        "image": "https:\/\/images.unsplash.com\/photo-1547891654-e66ed7ebb968?w=800&h=800&fit=crop",
+        "caption": "Visitando galer\u00edas de arte siempre me inspira. Cada obra cuenta una historia \u00fanica. \ud83d\uddbc\ufe0f",
+        "likes": [
+            "user001"
+        ],
+        "comments": [],
+        "created_at": "2024-12-04 15:45:00"
+    },
+    {
+        "id": "post003",
+        "user_id": "user001",
+        "image": "https:\/\/images.unsplash.com\/photo-1460661419201-fd4cecdf8a8b?w=800&h=800&fit=crop",
+        "caption": "La naturaleza es mi mayor fuente de inspiraci\u00f3n. Este paisaje captura la serenidad perfecta. \ud83c\udf05",
+        "likes": [
+            "user002",
+            "admin001"
+        ],
+        "comments": [],
+        "created_at": "2024-12-03 09:15:00"
+    },
+    {
+        "id": "post004",
+        "user_id": "user002",
+        "image": "https:\/\/images.unsplash.com\/photo-1513364776144-60967b0f800f?w=800&h=800&fit=crop",
+        "caption": "Flores en acuarela. La delicadeza de cada p\u00e9talo requiere paciencia y precisi\u00f3n. \ud83c\udf38\ud83c\udfa8",
+        "likes": [],
+        "comments": [],
+        "created_at": "2024-12-02 12:00:00"
+    }
+]

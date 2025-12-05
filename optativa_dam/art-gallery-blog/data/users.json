@@ -1,0 +1,32 @@
+[
+    {
+        "id": "user001",
+        "name": "Usuario Demo",
+        "username": "demo",
+        "password": "$2y$10$gqRYikyRuntUlvOwoh5qBuuJVT0fo1lqRF95RHKBr53xdgAj79/Um",
+        "avatar": "https://ui-avatars.com/api/?name=Usuario+Demo&background=667eea&color=fff&size=200",
+        "bio": "Amante del arte y la creatividad",
+        "role": "user",
+        "created_at": "2024-12-01 10:00:00"
+    },
+    {
+        "id": "user002",
+        "name": "Artista Profesional",
+        "username": "artist",
+        "password": "$2y$10$YhGSV7vjtviYNRmf.1nOjOxBvXk4LWKGNMVhCAXcFUUDHyIIclNu2",
+        "avatar": "https://ui-avatars.com/api/?name=Artista+Pro&background=764ba2&color=fff&size=200",
+        "bio": "Pintor contemporáneo | Exposiciones internacionales",
+        "role": "user",
+        "created_at": "2024-11-15 14:30:00"
+    },
+    {
+        "id": "admin001",
+        "name": "Administrador",
+        "username": "admin",
+        "password": "$2y$10$fs0xHYGoMaft/s6eZmCOROr1KPm4nLcx1PbZKDJVAYDgIOm2Ftm/K",
+        "avatar": "https://ui-avatars.com/api/?name=Admin&background=000&color=fff&size=200",
+        "bio": "Administrador del sistema",
+        "role": "admin",
+        "created_at": "2024-12-05 12:00:00"
+    }
+]

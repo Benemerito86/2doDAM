@@ -1,8 +1,8 @@
-# 🎨 ArtGram - Proyecto PHP MVC
+# ArtGram - Proyecto PHP MVC
 
 Este proyecto es una red social tipo Instagram construida desde cero utilizando una arquitectura **MVC (Modelo-Vista-Controlador)** sin frameworks externos.
 
-## 📂 Estructura del Proyecto
+## Estructura del Proyecto
 
 El proyecto sigue una estructura profesional para separar la lógica de la presentación:
 
@@ -24,7 +24,7 @@ El proyecto sigue una estructura profesional para separar la lógica de la prese
 └── /data               # "Base de datos" (Archivos JSON)
 ```
 
-## 🧠 Conceptos Clave Implementados
+## Conceptos Clave Implementados
 
 ### 1. Enrutamiento (Router)
 En lugar de archivos sueltos (`login.php`, `profile.php`), todas las peticiones entran por `public/index.php`.
@@ -46,12 +46,12 @@ Clases que encapsulan los datos (POO).
 ### 4. Vistas (Views)
 Archivos HTML limpios que reciben datos del controlador para mostrarlos.
 
-## 🚀 Credenciales de Prueba
+## Credenciales de Prueba
 
 *   **Admin**: `admin` / `admin123` (Puede borrar cualquier post)
 *   **Demo**: `demo` / `demo123`
 
-## 🛠 Instalación
+## Instalación
 
 1.  Asegúrate de que la carpeta `data` y `public/uploads` tengan permisos de escritura.
 2.  Ejecuta el servidor apuntando a la carpeta `public`:
@@ -59,3 +59,4 @@ Archivos HTML limpios que reciben datos del controlador para mostrarlos.
     php -S localhost:8000 -t public
     ```
 3.  Visita `http://localhost:8000/seed` para restaurar los datos de prueba.
+
